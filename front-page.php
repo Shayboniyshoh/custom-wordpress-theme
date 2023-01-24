@@ -9,13 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Blog Site Template">
 	<meta name="author" content="https://youtube.com/FollowAndrew">
-	<link rel="shortcut icon" href="images/logo.png">
-
-	<!-- FontAwesome CSS-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<!-- Theme CSS -->
+	<link rel="shortcut icon" href="/wp-content/themes/shayboniyshoh/theme-template/images/logo.png">
 	<?php
 	wp_head();
 	?>
@@ -34,7 +28,7 @@
 			</button>
 
 			<div id="navigation" class="collapse navbar-collapse flex-column">
-				<img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo">
+				<img class="mb-3 mx-auto logo" src="/wp-content/themes/shayboniyshoh/theme-template/images/logo.png" alt="logo">
 
 				<ul class="navbar-nav flex-column text-sm-center text-md-left">
 					<li class="nav-item active">
@@ -77,13 +71,13 @@
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="images/slider2.jpg" class="d-block w-100" alt="1">
+							<img src="/wp-content/themes/shayboniyshoh/theme-template/images/slider2.jpg" class="d-block w-100" alt="1">
 						</div>
 						<div class="carousel-item">
-							<img src="images/slider1.jpg" class="d-block w-100" alt="2">
+							<img src="/wp-content/themes/shayboniyshoh/theme-template/images/slider1.jpg" class="d-block w-100" alt="2">
 						</div>
 						<div class="carousel-item">
-							<img src="images/slider3.jpg" class="d-block w-100" alt="3">
+							<img src="/wp-content/themes/shayboniyshoh/theme-template/images/slider3.jpg" class="d-block w-100" alt="3">
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -134,10 +128,12 @@
 
 
 	<!-- Bootstrap Javascript -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+	<?php
+	wp_footer();
+	?>
 
 </body>
 

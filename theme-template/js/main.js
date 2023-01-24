@@ -1,10 +1,10 @@
-$(document).ready(function() {
-	
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1){  
+$(document).ready(function () {
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
 			$('.page-title').addClass("sticky");
 		}
-		else{
+		else {
 			$('.page-title').removeClass("sticky");
 		}
 	});
