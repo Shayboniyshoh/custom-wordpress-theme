@@ -1,15 +1,26 @@
 <!-- Adding WordPress Dynamic title -->
 <?php
+
 function shayboniyshoh_title_tag()
 {
     add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'shayboniyshoh_title_tag');
-?>
-<!-- end of adding WordPress Dynamic title -->
+// end of adding WordPress Dynamic title
 
-<!-- Enqueuing styles -->
-<?php
+// Creating menus
+function shayboniyshoh_menus()
+{
+    $locations = array(
+        'primary' => "Primary menu located at sidebar",
+        'footer' => "Footer menu of the theme"
+    );
+    register_nav_menus($locations);
+}
+// end of creating menus
+add_action('init', 'shayboniyshoh_menus');
+
+// Enqueuing styles
 function shayboniyshoh_reg_styles()
 {
     $version = wp_get_theme()->get('Version');
@@ -18,11 +29,9 @@ function shayboniyshoh_reg_styles()
     wp_enqueue_style('shoh-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', array(), '5.13.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'shayboniyshoh_reg_styles');
-?>
-<!-- end of enqueuing styles -->
+// end of enqueuing styles
 
-<!-- Enqueuing scripts -->
-<?php
+// Enqueuing scripts
 function shayboniyshoh_reg_scripts()
 {
     $version = wp_get_theme()->get('Version');
@@ -32,5 +41,6 @@ function shayboniyshoh_reg_scripts()
     wp_enqueue_script('shoh-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), '4.4.1', true);
 }
 add_action('wp_enqueue_scripts', 'shayboniyshoh_reg_scripts');
+
 ?>
 <!-- end enqueuing scripts -->
