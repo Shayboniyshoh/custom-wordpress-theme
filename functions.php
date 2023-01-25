@@ -8,7 +8,6 @@ add_action('after_setup_theme', 'shayboniyshoh_title_tag');
 ?>
 <!-- end of adding WordPress Dynamic title -->
 
-
 <!-- Enqueuing styles -->
 <?php
 function shayboniyshoh_reg_styles()
