@@ -4,6 +4,7 @@
 function shayboniyshoh_title_tag()
 {
     add_theme_support('title-tag');
+    add_theme_support('custom-logo');
 }
 add_action('after_setup_theme', 'shayboniyshoh_title_tag');
 // end of adding WordPress Dynamic title

@@ -18,14 +18,22 @@
 <body>
 
     <header class="header text-center">
-        <a class="site-title pt-lg-4 mb-0" href="index.html">SiteName.dev</a>
+        <a class="site-title pt-lg-4 mb-0" href="index.html">
+            Title
+        </a>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div id="navigation" class="collapse navbar-collapse flex-column">
-                <img class="mb-3 mx-auto logo" src="/wp-content/themes/shayboniyshoh/assets/images/logo.png" alt="logo">
+                <?php
+                if (function_exists('the_custom_logo')) {
+                    $custom_logo_id = get_theme_mod('custom_logo');
+                    $logo = wp_get_attachment_image_src($custom_logo_id);
+                }
+                ?>
+                <img class="mb-3 mx-auto logo object-fit-contain" src="<?php echo $logo[0] ?>" alt="logo">
                 <?php
                 wp_nav_menu(
                     array(
@@ -44,7 +52,6 @@
                     <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
                 </ul>
-
             </div>
         </nav>
     </header>
